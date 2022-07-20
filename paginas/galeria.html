@@ -1,105 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
-    <title>Boostrap</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <title>Stock</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-success">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
-                <img src="../imagenes/golden-view.jpg" alt="logo" height="100" width="100">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="../paginas/galeria.html">Galeria</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="../paginas/ubicacion.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Ubicacion
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="../paginas/ubicacion.html">Buenos Aires</a></li>
-                      <li><a class="dropdown-item" href="../paginas/ubicacion.html">Mendoza</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="../paginas/ubicacion.html">Santa Fe</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../paginas/quienes-somos.html">Quienes Somos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
-    <main>
-      <h1>GALERIA</h1>
-      <p class="parrafo1">Busca tu bebida preferida</p>
-      <section class="galeria1">
-        <div>
-          <div class="container"></div>
-          <div class="row"></div>
-          <div class="col-lg-18 text-center">
-            <div class="card border-0 bg-light mb-2">
-              <div class="card-body"><img src="../imagenes/foto-cerveza-corona.jpg" alt="clicquout-rich-rose" class="img-fluid" width="120px"></div></div><h6>CORONA</h6><p>$1.500,00</p></div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../imagenes/golden-view.jpg" alt="logo" height="100" width="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../paginas/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="../paginas/ubicacion.html" role="button">Ubicacion</a>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/quienes-somos.html">Quienes Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="px-2 search" type="search px-4" placeholder="Busca tu bebida preferida" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-        <div class="col-lg-1 text-center">
-            <div class="card border-0 bg-light mb-2">
-              <div class="card-body"><img src="../imagenes/foto-absolut.jpg" alt="clicquout-rich-rose" class="img-fluid" width="120px"></div></div><h6>VODKA ABSOLUT</h6><p>$1.600,00</p></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1>GALERIA</h1>
+    <section class="product">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-5 m-auto text-center"></div>
+          <h3>Busca tu bebida favorita</h3>
         </div>
-        <div class="col-lg-1 text-center">
-            <div class="card border-0 bg-light mb-2">
-              <div class="card-body"><img src="../imagenes/foto-ron.webp" alt="clicquout-rich-rose" class="img-fluid" width="120px"></div></div><h6>HABANA CLUB</h6><p>$2.000,00</p></div>
-        </div>
-        <div class="col-lg-1 text-center">
-            <div class="card border-0 bg-light mb-2">
-              <div class="card-body"><img src="../imagenes/foto-fernet.jpg" alt="clicquout-rich-rose" class="img-fluid" width="120px"></div></div><h6>FERNET BRANCA</h6><p>$1.000,00</p></div>
-        </div>
-        <div class="col-lg-1 text-center">
-            <div class="card border-0 bg-light mb-2">
-              <div class="card-body"><img src="../imagenes/whisky-jack-daniels.png" alt="clicquout-rich-rose" class="img-fluid" width="120px"></div></div><h6>WHISKY JACK DANIEL´S</h6><p>$4.000,00</p></div>
-        </div>
-      </section>
-      <footer class="footerBackground bg-success ">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 py-3 mb-5">
-              <ul class="footer__lista">
-                <li><a href="https://www.facebook.com/GoldenFoxBebidas" target="_blank">
-                        <img src="../imagenes/facebook-logo.png" width="30" height="30">
-                    </a></li>
-                <li><a href="https://www.instagram.com/bebidasgolden3/" target="_blank">
-                        <img src="../imagenes/Instagram-Logo-150x150.png" width="30" height="30">
-                    </a></li>
-                <li><a href="https://twitter.com/bebidas-golden" target="_blank">
-                        <img src="../imagenes/twitter-150x150.webp" width="30" height="30">
-                    </a></li>
-            </ul>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="../imagenes/foto-absolut.jpg" class="img-fluid" alt="foto de vodka marca absolut">
             </div>
           </div>
+          <h6>VODKA ABSOLUT</h6>
+          <p>$1500</p>
         </div>
-      </footer>
-    </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="../imagenes/foto-cerveza-corona.jpg" class="img-fluid" alt="foto de cerveza marca corona">
+            </div>
+          </div>
+          <h6>CERVEZA CORONA</h6>
+          <p>$900</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="../imagenes/foto-fernet.jpg" class="img-fluid" alt="foto de fernet marca branca">
+            </div>
+          </div>
+          <h6>FERNET BRANCA</h6>
+          <p>$1200</p>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card border-0 bg-light mb-2">
+            <div class="card-body">
+              <img src="../imagenes/foto-ron.webp" class="img-fluid" alt="foto de ron marca habana club">
+            </div>
+          </div>
+          <h6>RON HABANA CLUB</h6>
+          <p>$2000</p>
+        </div>
+      </div>
+      <div class="navPagina form-inline justify-content-center mt-3">
+        <nav>
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <footer class="footerBackground bg-dark">
+      <div class="container py-5">
+        <h5>Seguinos en nuestras redes</h5>
+        <div class="row">
+          <div class="col-lg-9 py-3 m-auto text-center footerBoton">
+            <span><a href="https://www.facebook.com/GoldenFoxBebidas" target="_blank"><i
+                  class="fa-brands fa-facebook-f me-1"></i></a></span>
+            <span><a href="https://www.instagram.com/_golden.beer/" target="_blank"><i
+                  class="fa-brands fa-instagram me-1"></i></a></span>
+            <span><a href="https://twitter.com/GoldenDrinks" target="_blank"><i
+                  class="fa-brands fa-twitter me-1"></a></i></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="https://kit.fontawesome.com/6c45ccba2a.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

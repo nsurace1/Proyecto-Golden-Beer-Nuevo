@@ -3,12 +3,15 @@
     padding: 0;
 }
 
-.nav-link:hover {
-    background-color: gray;
+.nav-link {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+    text-transform: uppercase;
 }
 
-body {
-    background-image: url(./imagenes/Summer-drinks-beer-bottle-cup-beach_1920x1080.jpg);
+.navbar-brand:hover {
+    background-color: gray;
 }
 
 h1 {
@@ -18,6 +21,7 @@ h1 {
     font-weight: 600;
     text-align: center;
     font-size: 35px;
+    display: none;
 }
 
 h2 {
@@ -29,14 +33,52 @@ h2 {
     margin: 20px auto;
 }
 
+.section1 {
+    background: url(./imagenes/Summer-drinks-beer-bottle-cup-beach_1920x1080.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 55% 50%;
+    width: 100%;
+    margin-top: -1.3rem;
+}
+
+.section1 p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0px 4px 4px rgb(0 0 0);
+
+
+}
+
 .section1 img {
     height: 40vh;
     margin: 50px auto;
-    border: solid 3px darkgoldenrod;
+    border: solid 3px rgb(44, 44, 44);
+}
+
+.btn1 {
+    height: 45px;
+    width: 10%;
+    border: none;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn1:hover {
+    transform: scale(1.5);
+}
+
+.conTransicion1 {
+    transition: all 2s;
+    border: none;
 }
 
 .parrafo1 {
-    color: white;
+    color: black;
     text-align: center;
     line-height: 2.2;
     font-size: 25px;
@@ -46,12 +88,12 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: black;
     text-align: center;
     line-height: 2.2;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     margin: 20px auto;
 }
 
@@ -64,6 +106,13 @@ h3 {
     margin: 20px auto;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
 .contenedor1 {
     text-align: center;
     line-height: 2.2;
@@ -72,37 +121,77 @@ h3 {
     font-weight: 700;
     margin: 20px auto;
     padding-left: 0.5rem;
+
 }
-.footer__lista{
+
+.paso1 {
+    background: url(./imagenes/paso1.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    height: 250px;
+}
+
+.paso2 {
+    background: url(./imagenes/paso2.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    height: 250px;
+}
+
+.paso3 {
+    background: url(./imagenes/paso3.png) no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+    height: 250px;
+}
+
+.btn2 {
+    height: 45px;
+    width: 15%;
+    border: none;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
+.btn2:hover {
+    transform: scale(1.5);
+}
+
+.conTransicion2 {
+    transition: all 2s;
+    border: none;
+}
+
+.footer__lista {
     list-style: none;
 }
-.galeria1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    height: 50vh;
-}
-.ubicacion1__lista{
+
+.ubicacion1__lista {
     padding-left: 60px;
     width: 25%;
 }
-.parrafo2{
-    color: white;
+
+.parrafo2 {
+    color: black;
     line-height: 2.2;
     font-size: 25px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin: 20px 40px;
 }
-.titulo3__lista{
-    color: white;
+
+.titulo3__lista {
+    color: black;
     line-height: 2.2;
     font-size: 25px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin: 40px 40px;
 }
+
 .input2 {
     padding-left: 1%;
     margin: 100px;
@@ -110,19 +199,21 @@ h3 {
 
 .input2__lista {
     margin: 2px;
-    color: white;
+    color: black;
     line-height: 2.2;
     font-size: 16px;
     font-family: "Poppins", sans-serif;
 }
-.search{
+
+.search {
     height: 40px;
     width: 80%;
     border-radius: 60px;
     outline: none;
     border: 2px solid black;
 }
-.btn-outline-success{
+
+.btn-outline-success {
     height: 40px;
     width: 25%;
     color: white;
@@ -133,11 +224,56 @@ h3 {
     font-weight: 700;
 }
 
+h5 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0px 4px 4px rgb(0 0 0);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 20px auto;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.footerBoton {
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+
+}
+
+.card:hover {
+    box-shadow: -2px -1px 25px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px -1px 25px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -1px 25px -4px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+.product{
+    margin-top: -1.5rem;
+    margin-bottom: 4.5rem;
+}
+.form-inline{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
 @media screen and (max-width: 460px) {
     .section1 img {
         display: none;
     }
+
+    .btn1 {
+        display: none;
+    }
+
+    .btn2 {
+        display: none;
+    }
 }
+
 
 @media screen and (max-width: 320px) {
     .section1 img {
