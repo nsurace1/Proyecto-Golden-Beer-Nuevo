@@ -1,0 +1,18 @@
+.section{
+    background-color: $color-principal;
+    div{
+        color: black;
+        text-align: center;
+        line-height: 2.2;
+        font-size: 25px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        margin: 20px auto;;
+    }
+}
+.footerBackground{
+    background-color: $color-secundario;
+    &__lista{
+        list-style: none;
+    }
+}
