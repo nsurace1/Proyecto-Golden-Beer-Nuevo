@@ -1,6 +1,19 @@
-$color-principal: white;
-$color-secundario: rgb(44, 44, 44);
-
 $pantalla-completa: 100%;
 $media-pantalla: 50%;
 
+$colores: (
+    "color-principal": white,
+    "color-secundario": rgb(44, 44, 44),
+);
+
+@mixin botonq ($btcolor) {
+    height: 45px;
+    width: 15%;
+    border: none;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+    margin: 20px auto;
+}

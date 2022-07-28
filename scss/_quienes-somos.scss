@@ -1,5 +1,5 @@
 .section10{
-    background-color: $color-principal;
+    background-color: map-get($colores,"color-principal");
     div{
         color: black;
         text-align: center;
@@ -7,12 +7,21 @@
         font-size: 25px;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
-        margin: 20px auto;;
+        margin: 20px auto;
     }
 }
 .footerBackground{
-    background-color: $color-secundario;
-    &__lista{
-        list-style: none;
+    background-color: map-get($colores, "color-secundario");
     }
+
+.boton25{
+    @include botonq (#2c2c2c);
+
+    &:hover{
+        transform: scale(1.5);
+    }
+}
+.conTransicion4{
+    transition: all 2s;
+    border: none;
 }
