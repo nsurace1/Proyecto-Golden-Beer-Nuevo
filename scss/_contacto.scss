@@ -1,3 +1,33 @@
-.footerBackground{
+.footerBackground {
     background-color: map-get($colores, "color-secundario");
-    }
+}
+
+.titulo3__lista {
+    color: black;
+    line-height: 2.2;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 40px 40px;
+}
+
+.parrafo2 {
+    color: black;
+    line-height: 2.2;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 20px 40px;
+}
+.input2 {
+    padding-left: 1%;
+    margin: 100px;
+}
+
+.input2__lista {
+    margin: 2px;
+    color: black;
+    line-height: 2.2;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}

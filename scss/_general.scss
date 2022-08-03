@@ -1,4 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    color: white;
+    margin: 20px auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 35px;
+    display: none;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    line-height: 2.2;
+    font-size: 2.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin: 20px auto;
+}
+
+h5 {
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 20px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.search {
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    border: 2px solid black;
+}
+
+.btn-outline-success {
+    height: 40px;
+    width: 25%;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: black;
+    border-radius: 60px;
+    font-weight: 700;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.footerBoton {
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right: 5px;
+
 }
